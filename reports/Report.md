@@ -8,7 +8,7 @@
 
 Из 43  тест-кейсов: 13 не прошли, 30 прошли. Итого: 69,76% (успешных) / 30,23% (неуспешных). 
 
-![](./AllReport.jpg)
+![](pictures/AllReport.jpg)
 
 ### Статистика успешных/неуспешных кейсов
 
@@ -16,21 +16,21 @@
 
 Все тест-кейсы на подключение к БД прошли успено: 
 
-![](./API.PNG)
+![](pictures/API.PNG)
 
 #### UI-тесты 
 
 - Позитивные (HappyPath) тесты, 4 тест-кейса из которых: 1 не прошел, 3 прошли.
 
-![](./HappyPath.PNG)
+![](pictures/HappyPath.PNG)
 
 - Негативные тесты, 35 тест-кейсов из которых: 12 не прошли, 23 прошли.
 
-![](./NegativeTests1.PNG)
+![](pictures/NegativeTests1.PNG)
 
-![](./NegativeTests2.PNG)
+![](pictures/NegativeTests2.PNG)
 
-![](./NegativeTests3.PNG)
+![](pictures/NegativeTests3.PNG)
 
 
 ### Общие рекомендации
