@@ -19,7 +19,7 @@ public class AllFieldsEmptyPayCardTest extends ByUIFirstTest {
         mainPage.payWithCard();
     }
 
-    // issue 13
+    // issue 12
     @Test
     public void shouldSuccessPayIfValidApprovedCards() {
         val cardData = new Data.CardData(getCardNumberWithEmptyField(), getMonthWithEmptyField(), getYearEmptyField(), getNameEmptyField(), getCVCEmptyField());

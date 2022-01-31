@@ -40,14 +40,6 @@ public class CardCVVPayFieldTest extends ByUIFirstTest {
         payPage.shouldImproperFormatNotification();
     }
 
-    // issue 12
-    @Test
-    public void shouldSuccessPayIfCVCFourDigits() {
-        val cardData = new Data.CardData(getApprovedCardNumber(), getValidMonth(), getValidYear(), getValidName(), getCVCFourDigits());
-        payPage.fillCardData(cardData);
-        payPage.shouldImproperFormatNotification();
-    }
-
     @Test
     public void shouldSuccessPayIfCVCWithSigns() {
         val cardData = new Data.CardData(getApprovedCardNumber(), getValidMonth(), getValidYear(), getValidName(), getCVCWithSigns());

@@ -62,11 +62,11 @@ public class PayPage {
         successNote.shouldBe(Condition.visible, Duration.ofSeconds(30));
     }
 
-    public void shouldFailureNotification() {
-        failureNote.shouldBe(Condition.visible, Duration.ofSeconds(30));
+    public void shouldSuccessNotificationHidden() {
+        successNote.shouldBe(Condition.hidden, Duration.ofSeconds(30));
     }
 
-    public void shouldFailureNotificationHidden() {
-        failureNote.shouldBe(Condition.hidden, Duration.ofSeconds(30));
+    public void shouldFailureNotification() {
+        failureNote.shouldBe(Condition.visible, Duration.ofSeconds(30));
     }
 }

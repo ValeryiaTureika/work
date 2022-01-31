@@ -51,8 +51,8 @@ public class CardYearPayFieldTest extends ByUIFirstTest {
     public void shouldSuccessPayIf23Year() {
         val cardData = new CardData(getUnknownCardNumber(), getValidMonth(), get23Year(), getValidName(), getCVC());
         payPage.fillCardData(cardData);
-        payPage.shouldFailureNotificationHidden();
-        payPage.shouldSuccessNotification();
+        payPage.shouldFailureNotification();
+        payPage.shouldSuccessNotificationHidden();
     }
 
     // issue 2
@@ -60,8 +60,8 @@ public class CardYearPayFieldTest extends ByUIFirstTest {
     public void shouldSuccessPayIf27Year() {
         val cardData = new CardData(getUnknownCardNumber(), getValidMonth(), get27Year(), getValidName(), getCVC());
         payPage.fillCardData(cardData);
-        payPage.shouldFailureNotificationHidden();
-        payPage.shouldSuccessNotification();
+        payPage.shouldFailureNotification();
+        payPage.shouldSuccessNotificationHidden();
     }
 
     @Test
