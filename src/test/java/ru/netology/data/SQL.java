@@ -9,13 +9,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class SQL {
-    static String url = getUrl();
-    static String user = "lera";
-    static String password = "1234";
 
-    public static String getUrl() {
-        return System.getProperty("db.url");
-    }
+    static String url = System.getProperty("db.url");
+    static String user = System.getProperty("db.user");
+    static String password = System.getProperty("db.password");
+
 
     @SneakyThrows
     public static void cleanTable() {

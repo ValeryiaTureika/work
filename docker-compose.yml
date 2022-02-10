@@ -5,7 +5,7 @@ services:
     ports:
       - '3306:3306'
     environment:
-      - MYSQL_USER=lera
-      - MYSQL_PASSWORD=1234
+      - MYSQL_USER=System.getProperty("db.user")
+      - MYSQL_PASSWORD=System.getProperty("db.password")
       - MYSQL_DATABASE=app
       - MYSQL_RANDOM_ROOT_PASSWORD=yes
